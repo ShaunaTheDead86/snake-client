@@ -13,6 +13,7 @@ const connect = function() {
   conn.on("connect", () => {
     console.log('Connection successful!');
     conn.write('Name: SHA');
+    // conn.write('MOVE: up');
   });
 
   conn.on("data", (data) => {
